@@ -4,3 +4,40 @@
     fundamentals, including setting font, boldness, italics, line and letter spacing, drop shadows and 
     other text features. We round off the module by looking at applying custom fonts to your page, and styling
      lists and links.</p>
+
+     <h1>Text </h1>
+     <p>The CSS properties used to style text generally fall into two categories, which we'll look at separately in this article:
+
+            Font styles: Properties that affect the font that is applied to the text, affecting what font is applied, how big it is, whether it is bold, italic, etc.
+            Text layout styles: Properties that affect the spacing and other layout features of the text, allowing manipulation of, for example, the space between lines and letters, and how the text is aligned withi
+            <p>CSS provides four common properties to alter the visual weight/emphasis of text:
+
+                    font-style: Used to turn italic text on and off. Possible values are as follows (you'll rarely use this, unless you want to turn some italic styling off for some reason):
+                    normal: Sets text to normal font (turns existing italics off.)
+                    italic: Sets text to use the italic version of the font if available; if not available, it will simulate italics with oblique instead.
+                    oblique: Sets text to use a simulated version of an italic font, created by slanting the normal version.
+                    font-weight: Sets how bold the text is. This has many values available in case you have many font variants available (such as -light, -normal, -bold, -extrabold, -black, etc.), but realistically you'll rarely use any of them except for normal and bold:
+                    normal, bold: Normal and bold font weight
+                    lighter, bolder: Sets the current element's boldness to be one step lighter or heavier than its parent element's boldness.
+                    100–900: Numeric boldness values that provide finer grained control than the above keywords, if needed. 
+                    text-transform: Allows you to set your font to be transformed. Values include:
+                    none: Prevents any transformation.
+                    uppercase: Transforms ALL TEXT TO CAPITALS.
+                    lowercase: Transforms all text to lower case.
+                    capitalize: Transforms all words to Have The First Letter Capitalized.
+                    full-width: Transforms all glyphs to be written inside a fixed-width square, similar to a monospace font, allowing aligning of e.g. latin characters along with asian language glyphs (like Chinese, Japanese, Korean.)
+                    text-decoration: Sets/unsets text decorations on fonts (you'll mainly use this to unset the default underline on links when styling them.) Available values are:
+                    none: Unsets any text decorations already present.
+                    underline: Underlines the text.
+                    overline: Gives the text an overline.
+                    line-through: Puts a strikethrough over the text.
+                    You should note that text-decoration can accept multiple values at once, if you want to add multiple decorations simultaneously, for example text-decoration: underline overline. Also note that text-decoration is a shorthand property for text-decoration-line, text-decoration-style, and text-decoration-color. You can use combinations of these property values to create interesting effects, for example text-decoration: line-through red wavy.</p>
+    <h1>color</h1>
+    <p>The color property sets the color of the foreground content of the selected elements (which is usually the text, but can also include a couple of other things, such as an underline or overline placed on text using the text-decoration property).
+
+        </p>
+
+        <h1>Image</h1>
+        <p>The <image> CSS data type represents a two-dimensional image. There are two kinds of images: plain images, referenced with a <url>, and dynamically-generated images, generated with <gradient> or element(). Images can be used with numerous CSS properties, such as background-image, border-image, content, cursor, and list-style-image.</p>
+
+            <a href="boxModelCss.html">CSS: Box Model</a>
