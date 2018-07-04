@@ -1,19 +1,120 @@
-<h1>FlexBox</h1>
 
-<p>The Flexible Box Module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities. This article gives an outline of the main features of flexbox, which we will be exploring in more detail in the rest of these guides.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../stylingTemp.css" />
+    <title>CSS: FlexBox</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+</head>
 
-        When we describe flexbox as being one dimensional we are describing the fact that flexbox deals with layout in one dimension at a time — either as a row or as a column. This can be contrasted with the two-dimensional model of CSS Grid Layout, which controls columns and rows together.</p>
+<body>
+  <div class="navbar">
+    <div class="navbar-container">
+        <a href="../../index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">HTML
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+            <a href="beginner-bootcamp/day-1/structureHtml.html">Structure</a>
+            <a href="beginner-bootcamp/day-1/tagsEnAttrHtml.html">Tags & Attributes</a>
+            <a href="beginner-bootcamp/day-1/linksHtml.html">Links</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">CSS
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="beginner-bootcamp/day-1/introductionCss.html">Introduction</a>
+                <a href="beginner-bootcamp/day-1/CTICss.html">Color, Text and Images</a>
+                <a href="beginner-bootcamp/day-1/boxModelCss.html">Box Model</a>
+                <a href="beginner-bootcamp/day-1/positioningCss.html">Positioning</a>
+                <a href="beginner-bootcamp/day-1/flexBoxCss.html">FlexBox</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Clean Code
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="beginner-bootcamp/day-1/cleanCode.html">Refactoring</a>
+                <a href="beginner-bootcamp/day-1/cleanCodeTips">Tips</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <section class="template">
+        <h1>FlexBox</h1>
+        <div class="topic">
+            <p>The Flexible Box Module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities. This article gives an outline of the main features of flexbox, which we will be exploring in more detail in the rest of these guides.
 
-        <p>The two axes of flexbox
-                When working with flexbox you need to think in terms of two axes — the main axis and the cross axis. The main axis is defined by the flex-direction property, and the cross axis runs perpendicular to it. Everything we do with flexbox refers back to these axes, so it is worth understanding how they work from the outset.
-                
-                The main axis
-                The main axis is defined by flex-direction, which has four possible values:
-                
-                row
-                row-reverse
-                column
-                column-reverse
-                Should you choose row or row-reverse, your main axis will run along the row in the inline direction.</p>
+                      <br>  When we describe flexbox as being one dimensional we are describing the fact that flexbox deals with layout in one dimension at a time — either as a row or as a column. This can be contrasted with the two-dimensional model of CSS Grid Layout, which controls columns and rows together.
+            
+            <br>The two axes of flexbox
+            When working with flexbox you need to think in terms of two axes — the main axis and the cross axis. The main axis is defined by the flex-direction property, and the cross axis runs perpendicular to it. Everything we do with flexbox refers back to these axes, so it is worth understanding how they work from the outset.    </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzZjuRDiv7u7knbJ5fZD74erOY8vQAvRKfPejLRZ0V0vXN6blGJA">
+        </div>
+        <div class="topic">
+            <p>  
+                        <strong>The main axis</strong> 
+                        The main axis is defined by flex-direction, which has four possible values:
+<br>
+                row <br>
+                row-reverse <br>
+                column <br>
+                column-reverse <br>
+                Should you choose row or row-reverse, your main axis will run along the row in the inline direction.
+                  
+            </p>
+            <img src="https://cdn-images-1.medium.com/max/1600/1*_Ruy6jFG7gUpSf76IUcJTQ.png">
+            
+        </div>
+        <div class="topic">
+            <p><strong>The cross axis</strong><br>
+                The cross axis runs perpendicular to the main axis, therefore if your flex-direction (main axis) is set to row or row-reverse the cross axis runs down the columns.
+            </p>
+            <img src="data:image/png;base64,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">
+        </div>
 
-                <p>The cross axis runs perpendicular to the main axis, therefore if your flex-direction (main axis) is set to row or row-reverse the cross axis runs down the columns.</p>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contacts">
+                <!-- <ul>
+                    <li>firstName lastName</li>
+                    <li>firstName lastName</li>
+                    <li>firstName lastName</li>
+                    <li>firstName lastName</li>
+                    <li>firstName lastName</li>
+                </ul> -->
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="beginner-bootcamp/day-1/structureHtml.html">HTML STRUCTORE</a></li>
+                    <li><a href="beginner-bootcamp/day-1/tagsEnAttrHtml.html">TAGS AND ATRIBUTES</a></li>
+                    <li><a href="beginner-bootcamp/day-1/linksHtml.html">Links html</a></li>
+                    <li><a href="beginner-bootcamp/day-1/introductionCss.html">CSS INTODUCTION</a></li>
+                    <li><a href="beginner-bootcamp/day-1/CTICss.html">CSS TEXT, COLORS AND ATRIBUTES</a></li>
+                    <li><a href="beginner-bootcamp/day-1/boxModelCss.html">CSS BOX MODEL</a></li>
+                    <li><a href="beginner-bootcamp/day-1/positioningCss.html">CSS POSITIONING</a></li>
+                    <li><a href="beginner-bootcamp/day-1/flexBoxCss.html">CSS FLEX BOX</a></li>
+                    <li><a href="beginner-bootcamp/day-1/cleanCode.html">CLEAN CODE REFACTORING</a></li>
+                    <li><a href="beginner-bootcamp/day-1/cleanCodeTips">CLEAN CODE TIPS</a></li>
+                </ul>
+            </div>
+            <div class="footer-followUs">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
