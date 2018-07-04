@@ -9,6 +9,56 @@ body {
     font-family: 'Open Sans', sans-serif; 
 }
 
+#header {
+    font-size: 10em;
+    color: red;
+    text-align: center;
+    text-shadow: 10px 10px 20px pink;
+}
+
+#content-wrapper {
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#content-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-item {
+    width: 25%;
+    border: 1px solid green;
+    margin: 5px;
+    padding: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.html {
+    margin: 5% 10% 10% 3%;
+    border: 1px solid red;
+}
+
+.HTML {
+    color: red;
+}
+
+.CSS {
+    color: green;
+}
+
+.clean-code {
+    color: pink;
+}
+
+
+
 /* FOOTER */
 footer {
     width: 100%;
