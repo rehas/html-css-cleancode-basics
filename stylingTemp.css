@@ -1,10 +1,10 @@
-/*BODY*/
+/* BODY */
 body {
     padding: 0;
     margin: 0;
 }
 
-/*FONT*/
+/* FONT */
 * { 
     font-family: 'Open Sans', sans-serif; 
 }
@@ -12,7 +12,7 @@ h1 {
     font-size: 36px;
 }
 
-/*HOVER*/
+/* HOVER */
 a { 
     color: #000; 
     text-decoration: none;
@@ -41,8 +41,6 @@ a:hover {
     padding: 40px 0;
 }
 
-
-
 .template .topic p {
     padding:0;
     margin:0;
@@ -55,6 +53,7 @@ a:hover {
     width: 400px;
     height: 100%;
 }
+
 /* FOOTER */
 footer {
     width: 100%;
@@ -76,10 +75,7 @@ footer li {
     padding-bottom: 6px;
 }
 
-
-
-
-
+/* NAVBAR */
 .navbar {
     overflow: hidden;
     background-color: #fff;
@@ -145,4 +141,62 @@ footer li {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+
+#header-img h3 { 
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 40px;
+}
+
+#header-img { background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/7c/Honolulu_Museum_of_Art_School_%28formerly_the_Academy_Art_Center_at_Linekona%29.JPG");
+height: 70vh;
+width: 100%;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+#content-header {
+    text-align: center;
+    display: block;
+    padding:30px 0;
+}
+
+#content-boxes{
+    width: 70%;
+    margin: auto;
+}
+
+
+.content-cat {
+display: flex;
+justify-content: space-between;
+padding-bottom:50px;
+}
+
+.content-item{
+    display: inline-block;
+   background-color: #eee;
+   width: 30%;
+   padding:40px 0;
+   transition: 300ms ease-in-out;
+}
+
+.content-item:hover{
+    box-shadow: 3px 3px 3px #888888;
+    transition: 300ms ease-in-out;
+}
+
+.content-item h1, p, a {
+    text-align: center;
+    display: block;
+}
+
+#content-item h1{
+    text-align: center;
+    display: block;
+    padding-bottom:30px;
 }
