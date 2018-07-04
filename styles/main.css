@@ -33,11 +33,28 @@ body {
     width: 25%;
     border: 1px solid green;
     margin: 5px;
+    padding: 2em;
+}
+
+a {
+    text-decoration: none;
 }
 
 .html {
     margin: 5% 10% 10% 3%;
     border: 1px solid red;
+}
+
+.HTML {
+    color: red;
+}
+
+.CSS {
+    color: green;
+}
+
+.clean-code {
+    color: pink;
 }
 
 
