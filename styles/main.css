@@ -26,10 +26,13 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .content-item {
-    width: 33%;
+    width: 25%;
+    border: 1px solid green;
+    margin: 5px;
 }
 
 .html {
