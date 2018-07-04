@@ -8,7 +8,41 @@ body {
 * { 
     font-family: 'Open Sans', sans-serif; 
 }
+h1 {
+    font-size: 36px;
+}
 
+/* MAIN */
+
+.template h1 { 
+    text-align: center;
+    padding: 40px 0;
+}
+
+.template {
+    width: 80%;
+    margin: auto;
+}
+
+.template .topic {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    padding: 30px 0;
+}
+
+.template .topic p {
+    padding:0;
+    margin:0;
+    width: 40%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.template .topic img {
+    width: 400px;
+    height: 100%;
+}
 /* FOOTER */
 footer {
     width: 100%;
