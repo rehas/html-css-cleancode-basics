@@ -1,50 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<h1>HTML: Structure</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" media="screen" href="../../stylingTemp.css" />
+  <title>Footer</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <link rel="stylesheet" href="./structure-html.css">
 
-<p>That wraps up the basics of individual HTML elements, but they aren't very useful on their own. Now we'll look at how individual elements are combined to form an entire HTML page:
+</head>
 
-                <!DOCTYPE html>
-                <html>
-                  <head>
-                    <meta charset="utf-8">
-                    <title>My test page</title>
-                  </head>
-                  <body>
-                    <p>This is my page</p>
-                  </body>
-                </html>
-                Here we have:
-                
-                <!DOCTYPE html>: The doctype. In the mists of time, when HTML was young (about 1991/2), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. They used to look something like this:
-                <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-                However, these days no one really cares about them, and they are really just a historical artifact that needs to be included for everything to work right. <!DOCTYPE html> is the shortest string of characters that counts as a valid doctype; that's all you really need to know.
-                <html></html>: The <html> element. This element wraps all the content on the entire page, and is sometimes known as the root element.
-                <head></head>: The <head> element. This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more. You'll learn more about this in the next article in the series.
-                <meta charset="utf-8">: This element sets the character set your document should use to UTF-8, which includes most characters from the vast majority of human written languages. Essentially it can now handle any textual content you might put on it. There is no reason not to set this, and it can help avoid some problems later.
-                <title></title>: The <title> element. This sets the title of your page, which is the title that appears in the browser tab the page is loaded in, and is used to describe the page when you bookmark/favorite it.
-                <body></body>: The <body> element. This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else.
-                
-                Entity references: Including special characters in HTML
-                In HTML, the characters <, >,",' and & are special characters. They are parts of the HTML syntax itself, so how do you include one of these characters in your text, for example if you really want to use an ampersand or less than sign, and not have it interpreted as code as some browsers may do?
-                
-                We have to use character references — special codes that represent characters, and can be used in these exact circumstances. Each character reference is started with an ampersand (&), and ended by a semicolon (;).
-                
-                Literal character	Character reference equivalent
-                <	&lt;
-                >	&gt;
-                "	&quot;
-                '	&apos;
-                &	&amp;
-                In the below example, you can see two paragraphs, which are talking about web technologies:
-                
-                <p>In HTML, you define a paragraph using the <p> element.</p>
-                
+<body>
+  <div class="navbar">
+    <div class="navbar-container">
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">HTML
+            <i class="fa fa-caret-down"></i>
+            </button>
+        <div class="dropdown-content">
+          <a href="beginner-bootcamp/day-1/structureHtml.html">Structure</a>
+          <a href="beginner-bootcamp/day-1/tagsEnAttrHtml.html">Tags & Attributes</a>
+          <a href="beginner-bootcamp/day-1/linksHtml.html">Links</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">CSS
+                <i class="fa fa-caret-down"></i>
+            </button>
+        <div class="dropdown-content">
+          <a href="beginner-bootcamp/day-1/introductionCss.html">Introduction</a>
+          <a href="beginner-bootcamp/day-1/CTICss.html">Color, Text and Images</a>
+          <a href="beginner-bootcamp/day-1/boxModelCss.html">Box Model</a>
+          <a href="beginner-bootcamp/day-1/positioningCss.html">Positioning</a>
+          <a href="beginner-bootcamp/day-1/flexBoxCss.html">FlexBox</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Clean Code
+                <i class="fa fa-caret-down"></i>
+            </button>
+        <div class="dropdown-content">
+          <a href="beginner-bootcamp/day-1/cleanCode.html">Refactoring</a>
+          <a href="beginner-bootcamp/day-1/cleanCodeTips">Tips</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="template">
+
+    <h1>HTML: Structure</h1>
+
+    <div class="topic">
+      <p>That wraps up the basics of individual HTML elements, but they aren't very useful on their own. Now we'll look at how individual elements are combined to form an entire HTML page:
+    </div>
+    <div class="topic">
+      <p>That wraps up the basics of individual HTML elements, but they aren't very useful on their own. Now we'll look at how individual elements are combined to form an entire HTML page:
+    </div>
+    <div class="topic">
+
+      <p>
+
+        &lt;!DOCTYPE html&gt;
+        <br> &lt;html&gt;
+        <br> &lt;head&gt;
+        <br> &lt;meta charset="utf-8"&gt;
+        <br> &lt;title&gt;My test page&lt;/title&gt;
+        <br> &lt;/head&gt;
+
+        <br> &lt;body&gt;
+        <br> &lt;p&gt;This is my page&lt;/p&gt;
+        <br> &lt;/body&gt;
+
+        <br> &lt;/html&gt;
+        <br> Here we have: &lt;/p&gt;
+        <br>
+      </p>
+    </div>
+        <div class="topic">
+      <p>
+        &lt;!DOCTYPE html&gt;: The doctype. In the mists of time, when HTML was young (about 1991/2), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking
+        and other useful things. They used to look something like this:
+        <br>
+        <br> &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; However, these days no one really cares about them, and they are really just a historical artifact that needs
+        to be included for everything to work right.
+        <br>
+        <br> &lt;!DOCTYPE html&gt; is the shortest string of characters that counts as a valid doctype; that's all you really need to know.
+        <br>
+        <br> &lt;html&gt; &lt;/html&gt;: The &lt;html&gt; element. This element wraps all the content on the entire page, and is sometimes known as the root element.
+        <br>
+        <br> &lt;head&gt;&lt;/head&gt;: The &lt;head&gt; element. This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords
+        and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more. You'll learn more about this in the next article in the series.
+        <br>
+        <br> &lt;meta charset="utf-8"&gt;: This element sets the character set your document should use to UTF-8, which includes most characters from the vast majority of human written languages. Essentially it can now handle any textual content you might
+        put on it. There is no reason not to set this, and it can help avoid some problems later.
+        <br>
+        <br> &lt;title&gt;&lt;/title&gt;: The &lt;title&gt; element. This sets the title of your page, which is the title that appears in the browser tab the page is loaded in, and is used to describe the page when you bookmark/favorite it.
+
+        <br>
+        <br> &lt;body&gt;&lt;/body&gt;: The &lt;body&gt; element. This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else. Entity references:
+        Including special characters in HTML In HTML, the characters
+        <,>,",' and & are special characters. They are parts of the HTML syntax itself, so how do you include one of these characters in your text, for example if you really want to use an ampersand or less than sign, and not have it interpreted as code
+          as some browsers may do? We have to use character references — special codes that represent characters, and can be used in these exact circumstances. Each character reference is started with an ampersand (&), and ended by a semicolon (;). Literal
+          character Character reference equivalent
+          < &lt;> &gt; " &quot; ' &apos; & &amp; In the below example, you can see two paragraphs, which are talking about web technologies:
+      </p>
+    </div>
+    </div>
+
+
+    <!-- <div class="topic">
+      <p>
+
+        <!DOCTYPE html>: The doctype. In the mists of time, when HTML was young (about 1991/2), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful
+        things. They used to look something like this:
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> However, these days no one really cares about them, and they are really just a historical artifact that needs to be included for everything to work right.
+        <!DOCTYPE html> is the shortest string of characters that counts as a valid doctype; that's all you really need to know.
+        <html>
+
+        </html>: The
+        <html> element. This element wraps all the content on the entire page, and is sometimes known as the root element.
+
+        <head></head>: The
+
+        <head> element. This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in
+          search results, CSS to style our content, character set declarations, and more. You'll learn more about this in the next article in the series.
+          <meta charset="utf-8">: This element sets the character set your document should use to UTF-8, which includes most characters from the vast majority of human written languages. Essentially it can now handle any textual content you might put on it. There is no reason
+          not to set this, and it can help avoid some problems later.
+          <title></title>: The
+          <title> element. This sets the title of your page, which is the title that appears in the browser tab the page is loaded in, and is used to describe the page when you bookmark/favorite it.
+
+            <body></body>: The
+
+            <body> element. This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else. Entity references: Including special characters in HTML
+              In HTML, the characters
+              <,>,",' and & are special characters. They are parts of the HTML syntax itself, so how do you include one of these characters in your text, for example if you really want to use an ampersand or less than sign, and not have it interpreted as
+                code as some browsers may do? We have to use character references — special codes that represent characters, and can be used in these exact circumstances. Each character reference is started with an ampersand (&), and ended by a semicolon
+                (;). Literal character Character reference equivalent
+                < &lt;> &gt; " &quot; ' &apos; & &amp; In the below example, you can see two paragraphs, which are talking about web technologies:
+      </p>
+
+      <p>
+
+      </p>
+
+
+      <p>In HTML, you define a paragraph using the "
+        <p>" element.</p>
+
+        <p>In HTML, you define a paragraph using the &lt; p &gt; element.</p>
+        In the live output below, you can see that the first paragraph has gone wrong, because the browser thinks that the second instance of
+        <p> is starting a new paragraph. The second paragraph looks fine, because we have replaced the angle brackets with character references.
+        </p>
+        <img src="https://impactalpha.com/wp-content/uploads/2018/03/859d8ff0af86b5eafb99246496c8797e-1.jpg">
+    </div> -->
+  </section>
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-contacts">
+        <!-- <ul>
+                    <li>firstName lastName</li>
+                    <li>firstName lastName</li>
+                    <li>firstName lastName</li>
+                    <li>firstName lastName</li>
+                    <li>firstName lastName</li>
+                </ul> -->
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="beginner-bootcamp/day-1/structureHtml.html">HTML STRUCTORE</a></li>
+          <li><a href="beginner-bootcamp/day-1/tagsEnAttrHtml.html">TAGS AND ATRIBUTES</a></li>
+          <li><a href="beginner-bootcamp/day-1/linksHtml.html">Links html</a></li>
+          <li><a href="beginner-bootcamp/day-1/introductionCss.html">CSS INTODUCTION</a></li>
+          <li><a href="beginner-bootcamp/day-1/CTICss.html">CSS TEXT, COLORS AND ATRIBUTES</a></li>
+          <li><a href="beginner-bootcamp/day-1/boxModelCss.html">CSS BOX MODEL</a></li>
+          <li><a href="beginner-bootcamp/day-1/positioningCss.html">CSS POSITIONING</a></li>
+          <li><a href="beginner-bootcamp/day-1/flexBoxCss.html">CSS FLEX BOX</a></li>
+          <li><a href="beginner-bootcamp/day-1/cleanCode.html">CLEAN CODE REFACTORING</a></li>
+          <li><a href="beginner-bootcamp/day-1/cleanCodeTips">CLEAN CODE TIPS</a></li>
+        </ul>
+      </div>
+      <div class="footer-followUs">
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!--
+
+
+  <h1>HTML: Structure</h1>
+
+  <p>In HTML, you define a paragraph using the &lt; p &gt; element.</p>
+
+  <p>That wraps up the basics of individual HTML elements, but they aren't very useful on their own. Now we'll look at how individual elements are combined to form an entire HTML page:
+
+    &lt; !DOCTYPE html &gt;
+    &lthtml&gt
+
+    &lthead&gt
+      &ltmeta charset="utf-8"&gt
+      &lttitle&gtMy test page&lt/title&gt
+    &lt/head&gt
+
+    &ltbody&gt
+      &ltp&gtThis is my page&lt/p&gt
+    &lt/body&gt
+
+    &lt/html&gt
+    Here we have:
+
+    <!DOCTYPE html>: The doctype. In the mists of time, when HTML was young (about 1991/2), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful
+    things. They used to look something like this:
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> However, these days no one really cares about them, and they are really just a historical artifact that needs to be included for everything to work right.
+    <!DOCTYPE html> is the shortest string of characters that counts as a valid doctype; that's all you really need to know.
+    <html>
+
+    </html>: The
+    <html> element. This element wraps all the content on the entire page, and is sometimes known as the root element.
+
+    <head></head>: The
+
+    <head> element. This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search
+      results, CSS to style our content, character set declarations, and more. You'll learn more about this in the next article in the series.
+      <meta charset="utf-8">: This element sets the character set your document should use to UTF-8, which includes most characters from the vast majority of human written languages. Essentially it can now handle any textual content you might put on it. There is no reason
+      not to set this, and it can help avoid some problems later.
+      <title></title>: The
+      <title> element. This sets the title of your page, which is the title that appears in the browser tab the page is loaded in, and is used to describe the page when you bookmark/favorite it.
+
+        <body></body>: The
+
+        <body> element. This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else. Entity references: Including special characters in HTML In
+          HTML, the characters
+          <,>,",' and & are special characters. They are parts of the HTML syntax itself, so how do you include one of these characters in your text, for example if you really want to use an ampersand or less than sign, and not have it interpreted as code
+            as some browsers may do? We have to use character references — special codes that represent characters, and can be used in these exact circumstances. Each character reference is started with an ampersand (&), and ended by a semicolon (;).
+            Literal character Character reference equivalent
+            < &lt;> &gt; " &quot; ' &apos; & &amp; In the below example, you can see two paragraphs, which are talking about web technologies:
+
+              <p>In HTML, you define a paragraph using the
+                <p> element.</p>
+
                 <p>In HTML, you define a paragraph using the &lt; p &gt; element.</p>
-                In the live output below, you can see that the first paragraph has gone wrong, because the browser thinks that the second instance of <p> is starting a new paragraph. The second paragraph looks fine, because we have replaced the angle brackets with character references.
-       </p>
-       <a href="tagsEnAttrHtml.html">Next Topic: Tags & Attributes </a>
-       <a href="http://www.scriptingmaster.com/html/basic-structure-HTML-document.asp">Source of the Page</a>
-
-
-       
+                In the live output below, you can see that the first paragraph has gone wrong, because the browser thinks that the second instance of
+                <p> is starting a new paragraph. The second paragraph looks fine, because we have replaced the angle brackets with character references.
+                </p>
+                <a href="tagsEnAttrHtml.html">Next Topic: Tags & Attributes </a>
+                <a href="http://www.scriptingmaster.com/html/basic-structure-HTML-document.asp">Source of the Page</a> -->
